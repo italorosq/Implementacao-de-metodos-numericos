@@ -5,10 +5,11 @@ def funcao(x):
     return x**2
 def secao_aurea(a, b):
     phi = (1 + math.sqrt(5)) / 2
-    x1 = b - (b - a) / phi
-    x2 = a + (b - a) / phi
-    return x1, x2   
-def secao_aurea_iter(func, a, b, max_iter=10):
+    aur = phi - 1
+    x1 = b - (b - a) * aur
+    x2 = a + (b - a) * aur
+    return x1, x2
+def secao_aurea_iter(func, a, b, max_iter=1000):
     for _ in range(max_iter):
         x1, x2 = secao_aurea(a, b)
         if funcao(x1) < funcao(x2):
@@ -17,7 +18,7 @@ def secao_aurea_iter(func, a, b, max_iter=10):
             a = x1
         if abs(funcao(x1) - funcao(x2)) < 0.000001:
             break
-    return (a + b) / 2
+    return (x1 + x2) / 2
 
 input_a = float(input("Digite um valor para a: "))
 input_b = float(input("Digite um valor para b: "))
