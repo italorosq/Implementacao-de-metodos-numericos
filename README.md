@@ -22,6 +22,8 @@ Atualmente, os seguintes métodos estão disponíveis:
 - **O que faz?** Encontra o ponto de mínimo de uma função unimodal dentro de um intervalo.
 - **Como funciona?** Reduz iterativamente o intervalo de busca, descartando a parte que não contém o mínimo, com base na proporção áurea. O script também plota um gráfico para visualizar o resultado.
 
+### 3. Hooke-Jeeves (`hookejeeves.py`)
+
 ---
 
 ## ⚙️ Como Usar
@@ -62,6 +64,4 @@ O script solicitará os valores de entrada necessários (como o ponto inicial ou
 
 ## 🔮 Próximos Passos
 
-
 - [ ] Criar uma interface gráfica simples para interagir com os métodos.
-
