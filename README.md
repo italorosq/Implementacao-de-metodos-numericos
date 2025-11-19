@@ -58,7 +58,12 @@ Para executar os scripts, você precisa ter o Python instalado, juntamente com a
 Instale as dependências necessárias usando `pip`:
 
 ```bash
-pip install numpy sympy matplotlib pandas seaborn
+pip install
+numpy
+sympy
+matplotlib
+pandas
+seaborn
 2. Executando os Scripts
 Navegue até o diretório métodos numéricos e execute o script desejado:
 
@@ -72,6 +77,7 @@ Você precisará ter o Jupyter Notebook ou o JupyterLab instalado:
 
 pip install notebook
 E então, para abrir:
+Navegue novamente até a pasta com os aqrquivos e abra eles .
 
 jupyter notebook
 O script solicitará os valores de entrada necessários (como o ponto inicial ou o intervalo de busca) diretamente no terminal ou no próprio notebook.
