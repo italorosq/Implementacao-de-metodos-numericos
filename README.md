@@ -12,10 +12,10 @@ O objetivo deste repositório é aplicar e demonstrar o funcionamento de método
 
 Atualmente, os seguintes métodos estão disponíveis:
 
-### 1. Método de Newton(`newton.py`)
+### 1. Método de Newton (`newton.py`)
 
-- **O que faz?** Encontra o minimo de uma função
-- **Como funciona?** Utiliza uma abordagem iterativa que aproxima o minimo da função a partir de um ponto inicial, usando a tangente da curva. O script também plota o gráfico da função e o resultado encontrado.
+- **O que faz?** Encontra o mínimo de uma função.
+- **Como funciona?** Utiliza uma abordagem iterativa que aproxima o mínimo da função a partir de um ponto inicial, usando a primeira e a segunda derivada. O script também plota o gráfico da função e o resultado encontrado.
 
 ### 2. Seção Áurea (`secao_aurea.py`)
 
@@ -23,6 +23,29 @@ Atualmente, os seguintes métodos estão disponíveis:
 - **Como funciona?** Reduz iterativamente o intervalo de busca, descartando a parte que não contém o mínimo, com base na proporção áurea. O script também plota um gráfico para visualizar o resultado.
 
 ### 3. Hooke-Jeeves (`hookejeeves.py`)
+
+- **O que faz?** Encontra o mínimo de uma função de múltiplas variáveis.
+- **Como funciona?** É um método de busca direta que combina buscas exploratórias ao longo dos eixos coordenados com movimentos de padrão para acelerar a convergência. O script também plota a trajetória da otimização.
+
+### 4. Gradiente Descendente (`Gradientedescndente.py`)
+
+- **O que faz?** Encontra o mínimo de uma função de múltiplas variáveis.
+- **Como funciona?** Move-se iterativamente na direção oposta ao gradiente da função em um ponto, buscando o caminho de maior declive para encontrar um mínimo local.
+
+### 5. Nelder-Mead (`simplexneldermead.py`)
+
+- **O que faz?** Encontra o mínimo de uma função de múltiplas variáveis.
+- **Como funciona?** Utiliza um simplex (um polígono com n+1 vértices em n dimensões) que se adapta à topografia da função através de operações de reflexão, expansão, contração e encolhimento para encontrar o mínimo.
+
+### 6. Newton Multivariado (`newtonmultivariado.ipynb`)
+
+- **O que faz?** Encontra o ponto crítico (mínimo, máximo ou ponto de sela) de uma função de múltiplas variáveis.
+- **Como funciona?** Generaliza o método de Newton para múltiplas dimensões, utilizando o gradiente e a matriz Hessiana da função para convergir rapidamente para uma solução.
+
+### 7. Rosenbrock (`rosenbrock.ipynb`)
+
+- **O que faz?** Encontra o mínimo de uma função de múltiplas variáveis.
+- **Como funciona?** É um método de busca direta que ajusta continuamente um conjunto de direções de busca ortogonais, adaptando-se à forma da função para encontrar o mínimo.
 
 ---
 
@@ -35,33 +58,20 @@ Para executar os scripts, você precisa ter o Python instalado, juntamente com a
 Instale as dependências necessárias usando `pip`:
 
 ```bash
-pip install numpy sympy matplotlib
-```
+pip install numpy sympy matplotlib pandas seaborn
+2. Executando os Scripts
+Navegue até o diretório métodos numéricos e execute o script desejado:
 
-### 2. Executando os Scripts
-
-Navegue até o diretório `métodos numéricos` e execute o script desejado:
-
-```bash
 cd "métodos numéricos"
-```
+Para os arquivos .py:
 
-**Para o Método de Newton:**
+python nome_do_arquivo.py
+Para os arquivos .ipynb (Jupyter Notebooks):
 
-```bash
-python newton.py
-```
+Você precisará ter o Jupyter Notebook ou o JupyterLab instalado:
 
-**Para a Seção Áurea:**
+pip install notebook
+E então, para abrir:
 
-```bash
-python secao_aurea.py
-```
-
-O script solicitará os valores de entrada necessários (como o ponto inicial ou o intervalo de busca) diretamente no terminal.
-
----
-
-## 🔮 Próximos Passos
-
-- [ ] Criar uma interface gráfica simples para interagir com os métodos.
+jupyter notebook
+O script solicitará os valores de entrada necessários (como o ponto inicial ou o intervalo de busca) diretamente no terminal ou no próprio notebook.
