@@ -2,7 +2,7 @@ import math
 import matplotlib.pyplot as plt 
 
 def funcao(x):
-    return x**2
+    return 4 * math.log(x) - x
 def secao_aurea(a, b):
     phi = (1 + math.sqrt(5)) / 2
     aur = phi - 1

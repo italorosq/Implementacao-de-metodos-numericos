@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 def funcao(x):
-    return (1 - x[0])**2 + 100 * (x[1] - x[0]**2)**2
+    return  (1 - x[0])**2 + 100 * (x[1] - x[0]**2)**2
 
 def secao_aurea(f_uni, a, b, tol=1e-6, max_iter=100):
     phi = (1 + math.sqrt(5)) / 2
