@@ -24,6 +24,7 @@ Atualmente, os seguintes métodos estão disponíveis:
 
 ### 3. Hooke-Jeeves (`hookejeeves.py`)
 
+<<<<<<< HEAD
 - **O que faz?** Encontra o mínimo de uma função de múltiplas variáveis.
 - **Como funciona?** É um método de busca direta que combina buscas exploratórias ao longo dos eixos coordenados com movimentos de padrão para acelerar a convergência. O script também plota a trajetória da otimização.
 
@@ -48,6 +49,35 @@ Atualmente, os seguintes métodos estão disponíveis:
 - **Como funciona?** É um método de busca direta que ajusta continuamente um conjunto de direções de busca ortogonais, adaptando-se à forma da função para encontrar o mínimo.
 
 ---
+=======
+- **O que faz?** 
+- **Como funiona ?** 
+
+### 4. Rosenbrock (`rosenbrock.ipynb`)
+
+- **O que faz?** 
+- **Como funiona ?**
+
+### 5. Simplex (`simplexneldermead.py`)
+
+- **O que faz?** 
+- **Como funiona ?**
+
+### 6. Gradiente descendente (`Gradientedescendente.py`)
+
+- **O que faz?** 
+- **Como funiona ?**
+
+### 7. Newton multivariado (`newtonmultivariado.ipynb`)
+
+- **O que faz?** 
+- **Como funiona ?**
+
+### 8. fletcher reeves (`fletcherreeves.ipynb`)
+
+- **O que faz?** 
+- **Como funiona ?**
+>>>>>>> c6a23aa (começando a descrição dos outros métodos implementados)
 
 ## ⚙️ Como Usar
 
